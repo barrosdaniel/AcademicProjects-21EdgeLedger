@@ -1,3 +1,82 @@
-h1 {
-  color: orangered;
+/* Imports /////////////////////////////////////////// */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+/* Variables /////////////////////////////////////////// */
+:root {
+  /* Colours */
+  --color-white: #f4f4f4;
+  --color-black: #090909;
+
+  --color-primary: #93cb52;
+
+  --color-gray-dark-2: #333;
+  /* Other */
+  --border-radius: 5px;
+}
+
+
+
+/* Resets /////////////////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+
+
+/* Utility Classes/////////////////////////////////////////// */
+.text-primary {
+  color: var(--color-primary);
+}
+
+
+
+/* Navbar /////////////////////////////////////////// */
+.navbar {
+  background-color: var(--color-gray-dark-2);
+  color: var(--color-white);
+  position: sticky;
+  z-index: 1;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__nav-items {
+  display: flex;
+}
+
+.navbar__nav-link:link,
+.navbar__nav-link:visited {
+  color: var(--color-white);
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: var(--border-radius);
+  transition: 0.2s;
+}
+
+.navbar__nav-link:hover,
+.navbar__nav-link:active {
+  background-color: var(--color-primary);
 }
