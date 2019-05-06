@@ -1,7 +1,5 @@
 /* Imports /////////////////////////////////////////// */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Variables /////////////////////////////////////////// */
 :root {
@@ -10,23 +8,23 @@
   --color-black: #090909;
 
   --color-primary: #93cb52;
+  --color-primary-dark-1: #7ab436;
 
   --color-gray-dark-2: #333;
   /* Other */
   --border-radius: 5px;
 }
 
-
-
 /* Resets /////////////////////////////////////////// */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
 }
 
 ul {
@@ -41,14 +39,41 @@ p {
   margin: 0.75rem 0;
 }
 
-
-
 /* Utility Classes/////////////////////////////////////////// */
 .text-primary {
   color: var(--color-primary);
 }
 
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
 
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius);
+  border: none;
+  transition: 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--color-primary-dark-1);
+}
+
+.btn-dark {
+  background-color: var(--color-gray-dark-2);
+  color: var(--color-white);
+}
 
 /* Navbar /////////////////////////////////////////// */
 .navbar {
@@ -79,4 +104,29 @@ p {
 .navbar__nav-link:hover,
 .navbar__nav-link:active {
   background-color: var(--color-primary);
+}
+
+/* Showcase //////////////////////////////////////////////////////////////////*/
+.showcase {
+  background: var(--color-gray-dark-2) url(../img/showcase.jpg) no-repeat center
+    center/cover;
+  height: calc(100vh - 61px);
+  color: var(--color-white);
+  position: relative;
+}
+
+.showcase__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8rem;
+
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
