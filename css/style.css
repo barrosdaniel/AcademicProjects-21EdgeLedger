@@ -225,9 +225,14 @@ p {
 .who__img {
   background: url(../img/people.jpg) no-repeat center center/cover;
 }
-.who__text {
+
+/* Clients ////////////////////////////////////////////////////////*/
+.clients__items {
+  display: flex;
 }
-.who__list {
-}
-.who__list-item {
+
+.clients__images {
+  display: block;
+  margin: auto;
+  width: 60%;
 }
