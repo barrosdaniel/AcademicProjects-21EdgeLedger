@@ -11,6 +11,8 @@
   --color-primary-dark-1: #7ab436;
 
   --color-gray-dark-2: #333;
+  --color-gray-dark-1: #444;
+  --color-gray-light-1: #f4f4f4;
   /* Other */
   --border-radius: 5px;
 }
@@ -59,12 +61,34 @@ p {
   padding: 3rem 0;
 }
 
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-primary {
   color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-gray-light-1);
+  color: var(--color-gray-dark-2);
+}
+
+.bg-dark {
+  background-color: var(--color-gray-dark-2);
+  color: var(--color-gray-light-1);
 }
 
 .l-heading {
@@ -82,6 +106,15 @@ p {
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.list {
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--color-gray-dark-1);
 }
 
 .btn:link,
@@ -179,4 +212,22 @@ p {
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+/* Who We Are ////////////////////////////////////////////////////////*/
+.who {
+  display: flex;
+}
+
+.who > * {
+  flex: 1;
+}
+.who__img {
+  background: url(../img/people.jpg) no-repeat center center/cover;
+}
+.who__text {
+}
+.who__list {
+}
+.who__list-item {
 }
